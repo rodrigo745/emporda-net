@@ -11,7 +11,7 @@ export default function NavBar(){
 
 
     return(
-        <div className="h-20 w-full fondo text-white pt-4 px-10 flex justify-between">
+        <div className="h-20 w-full fixed fondo text-white pt-4 px-10 flex justify-between z-50">
             <h3>{empordaClaro}</h3>
 
             <div className="hidden md:flex space-x-14 mt-1">
