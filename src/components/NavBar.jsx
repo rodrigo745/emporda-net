@@ -25,8 +25,11 @@ export default function NavBar(){
 
                 {
                     mostrar &&
-                    <div className="absolute w-full h-[94vh] fondo left-0">
-                        <p>asdad</p>
+                    <div className="absolute w-full h-[94vh] px-10 pt-10 space-y-8 fondo left-0">
+                        {TextNav("I", "nicio", 80)}
+                        {TextNav("S", "ervicios", 150)}
+                        {TextNav("G", "alería", 100)}
+                        {TextNav("C", "ontacto", 150)}
                     </div>
                 }
 
