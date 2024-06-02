@@ -21,8 +21,14 @@ export default function NavBar(){
                 {TextNav("C", "ontacto", 150)}
             </div>
             <div className="block md:hidden">
-                <p className="text-3xl font-bold rotate-90 mt-1 cursor-pointer">|||</p>
+                <p onClick={mostrarBtn} className="text-3xl font-bold rotate-90 mt-1 cursor-pointer">|||</p>
 
+                {
+                    mostrar &&
+                    <div className="absolute w-full h-[94vh] fondo left-0">
+                        <p>asdad</p>
+                    </div>
+                }
 
 
             </div>
