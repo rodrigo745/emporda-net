@@ -14,7 +14,7 @@ export default function NavBar(){
     return(
         <div className="h-20 w-full fixed fondo text-white pt-4 px-5 md:px-10 flex justify-between z-50">
             <div className="">
-                <Image className="mt-2" src="/empordaOscuro.png" width={140} height={140} alt="Emporda nav" />
+                <Image className="mt-2" src="/empordaOscuro.png" width={140} height={140} alt="Emporda nav" style={{ width: 'auto', height: 'auto' }}  />
             </div>
 
             <div className="hidden md:flex space-x-14 mt-1">
