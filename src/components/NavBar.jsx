@@ -15,10 +15,10 @@ export default function NavBar(){
         <div className="h-20 w-full fixed fondo text-white pt-4 px-5 md:px-10 flex justify-between z-50">
             <div className="">
             <Image 
-                className="mt-2 min-w-[180px] max-w-[70%] cursor-pointer" 
+                className="mt-3 min-w-[150px] cursor-pointer" 
                 src="/empordaOscuro.png" 
-                width={180} 
-                height={180} 
+                width={150} 
+                height={150} 
                 alt="Emporda nav" 
                 style={{ maxWidth: '100%', height: 'auto' }} 
             />

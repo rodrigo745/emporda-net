@@ -9,7 +9,7 @@ export default function Home() {
     <main className="">
       <NavBar/>
       <Header/>
-      <hr/>
+      <hr className="border-blue-200 mx-12"/>
       <MainUno/>
 
     </main>
