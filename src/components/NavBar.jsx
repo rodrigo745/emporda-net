@@ -12,7 +12,7 @@ export default function NavBar(){
 
 
     return(
-        <div className="h-20 w-full fixed fondo text-white pt-4 px-5 md:px-10 flex justify-between z-50">
+        <div className="h-20 w-full fixed fondo text-white pt-4 px-5 md:px-10 flex justify-between z-50 shadow-md">
             <div className="">
             <Image 
                 className="mt-3 min-w-[150px] cursor-pointer" 
