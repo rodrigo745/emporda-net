@@ -4,7 +4,7 @@ export default function Header(){
     return(
         <div className="h-screen flex flex-col md:flex md:flex-row justify-between px-20 items-center">
             <div className="mt-28 md:mt-0 flex flex-col justify-center items-center">
-                <div className="">
+                <div className="px-8 md:px-0">
                     <Image src="/emporda.jpg" width={430} height={400} alt="EmpordaNet" />
                 </div>
                 <p className="text-2xl md:text-3xl font-bold text-center md:mt-2">Servicio de Limpieza</p>

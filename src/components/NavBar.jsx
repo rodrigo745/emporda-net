@@ -13,8 +13,8 @@ export default function NavBar(){
 
     return(
         <div className="h-20 w-full fixed fondo text-white pt-4 px-5 md:px-10 flex justify-between z-50">
-            <div>
-                <Image className="w-fit mt-1" src="/empordaOscuro.jpg" width={530} height={200} alt="Emporda nav" />
+            <div className="">
+                <Image className="mt-2" src="/empordaOscuro.jpg" width={140} height={140} alt="Emporda nav" />
             </div>
 
             <div className="hidden md:flex space-x-14 mt-1">
