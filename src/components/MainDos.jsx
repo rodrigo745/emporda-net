@@ -60,7 +60,7 @@ export default function MainDos(){
     const base = "text-white font-bold  px-4 cursor-pointer  w-full text-center";
 
     return(
-        <div>
+        <div className="h-full">
             <div className="hidden md:block w-full z-0"><Image className=" w-full absolute z-10" src="/fondoCurvo.svg" width={1000} height={1000} alt="fondo curvo" /></div>
             <div className="block md:hidden w-full  z-0"><Image className="w-full absolute z-10" src="/fondoCurvoMovil.svg" width={500} height={500} alt="fondo curvo" /></div>
             <h4 className="text-3xl md:text-4xl font-bold azulCo text-center pt-20 md:pt-36 z-20 relative">G<span className="text-white">alería</span></h4>
@@ -83,6 +83,9 @@ export default function MainDos(){
                         <p id="3" onClick={cambiarPestaña} className={`${base} ${estilo3} text-sm p-2`}>Residencias</p>
                     </div>
                         <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} text-sm p-2`}>Tramuntana</p>
+                </div>
+                <div className="md:h-[900px] h-[650px]">
+
                 </div>
             </div>
         </div>
