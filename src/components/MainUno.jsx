@@ -68,7 +68,7 @@ export default function MainUno(){
                         }
                         </div>
                     </div>
-                <div className="flex flex-col md:hidden space-y-4 mb-10">
+                <div className="flex flex-col md:hidden space-y-4">
                         {
                             informacion[2].map((e,index)=> (
                                 <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 text-center">{e}</p>
