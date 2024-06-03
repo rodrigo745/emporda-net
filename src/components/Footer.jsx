@@ -10,19 +10,19 @@ export default function Footer(){
             <div className="md:w-[50%] mt-10 md:mt-20">
                 <h4 className="azulCo font-bold text-xl md:text-3xl">¡D<span className="oscuroCo">isponemos de múltiples vías de comunicación</span>!</h4>
                 <div className="mt-6 md:mt-10 flex">
-                    <IoCallOutline className="text-2xl md:text-4xl text-blue-400"/> 
+                    <IoCallOutline className="text-2xl md:text-4xl text-blue-300"/> 
                     <p className=" ml-2 text-md md:text-2xl font-bold">659 28 6161</p>
                 </div>
                 <div className="mt-5 flex">
-                    <IoCallOutline className="text-2xl md:text-4xl text-blue-400"/> 
+                    <IoCallOutline className="text-2xl md:text-4xl text-blue-300"/> 
                     <p className=" ml-2 text-md md:text-2xl font-bold">611 73 4262</p>
                 </div>
                 <div className="mt-5 flex">
-                    <FaInstagram className="text-2xl md:text-4xl text-blue-400"/> 
+                    <FaInstagram className="text-2xl md:text-4xl text-blue-300"/> 
                     <p className=" ml-2 text-md md:text-2xl font-bold">@empordanet_serviciolimpieza</p>
                 </div>
                 <div className="mt-5 flex">
-                    <MdMailOutline className="text-2xl md:text-4xl text-blue-400"/> 
+                    <MdMailOutline className="text-2xl md:text-4xl text-blue-300"/> 
                     <p className=" ml-2 text-md md:text-2xl font-bold">empordanetlimpieza@gmail.com</p>
                 </div>
             </div>
