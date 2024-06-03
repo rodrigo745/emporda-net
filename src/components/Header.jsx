@@ -8,7 +8,7 @@ export default function Header(){
                     <Image src="/emporda.jpg" width={430} height={400} alt="EmpordaNet" />
                 </div>
                 <p className="text-2xl md:text-3xl font-bold text-center md:mt-2">Servicio de Limpieza</p>
-                <div className="w-full px-14 md:w-[560px] mt-10 font-medium">
+                <div className="w-screen px-14 md:w-[560px] mt-10 font-medium">
 
                     <p className="text-justify">
                     <span className="azulCo font-bold">S</span>omos tu equipo de confianza para que tu hogar brille como nunca en la zona del Alto/Bajo Empordán. </p> <br />
