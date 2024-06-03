@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function Header(){
     return(
         <div className="h-screen flex flex-col md:flex md:flex-row justify-between px-20 items-center">
-            <div className="mt-28 md:mt-0">
-                <div className="scale-75 md:scale-100">
-                    {empordaOscuro}
+            <div className="mt-28 md:mt-0 flex flex-col justify-center items-center">
+                <div className="">
+                    <Image src="/emporda.jpg" width={430} height={400} alt="EmpordaNet" />
                 </div>
                 <p className="text-2xl md:text-3xl font-bold text-center md:mt-2">Servicio de Limpieza</p>
                 <div className="w-full px-14 md:w-[560px] mt-10 font-medium">
@@ -23,7 +23,3 @@ export default function Header(){
         </div>
     )
 }
-
-const empordaOscuro = <svg xmlns="http://www.w3.org/2000/svg" width="529" height="133" viewBox="0 0 529 133">
-<text id="Emporda_Net" data-name="Emporda Net" fill="#58c1e8" font-size="110" font-family="ScriptMTBold, Script MT"><tspan x="0" y="105">E</tspan><tspan y="105" fill="#273238" font-size="90">mporda </tspan><tspan y="105">N</tspan><tspan y="105" fill="#273238" font-size="90">et</tspan></text>
-</svg>;
