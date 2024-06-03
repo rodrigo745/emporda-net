@@ -8,9 +8,12 @@ export default function Home() {
   return (
     <main className="">
       <NavBar/>
+      
       <Header/>
-      <hr className="border-blue-200 mx-12"/>
+
+      <hr className="border-blue-200 mx-12 mt-10"/>
       <MainUno/>
+
 
     </main>
   );
