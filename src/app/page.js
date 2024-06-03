@@ -11,7 +11,7 @@ export default function Home() {
       
       <Header/>
 
-      <hr className="border-blue-200 mx-12 mt-10"/>
+      <hr className="border-blue-200 mx-10 mt-10"/>
       <MainUno/>
 
 
