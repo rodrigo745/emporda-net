@@ -9,9 +9,9 @@ export default function MainUno(){
             <div className="hidden md:block md:w-[20%]">
                 <Image src="/mainUno.svg" width={370} height={370} alt="limpieza"/>
             </div>
-            <div className="md:w-[50%] md:pl-10">
+            <div className="md:w-[70%] 2xl:w-[53%] md:pl-10">
                 <h4 className="azulCo font-bold text-2xl md:text-4xl md:ml-2">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
-                <div className="mt-20 w-full hidden md:flex space-x-16 ml-32 md:ml-32  md:scale-125">
+                <div className="md:mt-10 2xl:mt-20 w-full hidden md:flex space-x-16  2xl:ml-32   2xl:scale-125">
                     <div className="space-y-8">
                         {
                             informacion[0].map((e,index)=> (
@@ -49,13 +49,24 @@ export default function MainUno(){
                             }
                     </div>
                 </div>
-                <div className="md:hidden mt-5 grid grid-cols-2 gap-x-5 w-[90vw]">
+                <div className="md:hidden mt-5 flex justify-between">
+                    <div className="flex flex-col">
+
                         {
                             informacion[1].map((e,index)=> (
+                                index <=1 &&
                                 <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 w-32 text-center mb-4">{e}</p>
                             ))
                         }
-
+                        </div>
+                        <div className="flex flex-col">
+{
+                            informacion[1].map((e,index)=> (
+                                index >=2 &&
+                                <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 w-32 text-center mb-4">{e}</p>
+                            ))
+                        }
+                        </div>
                     </div>
                 <div className="flex flex-col md:hidden space-y-4 mb-10">
                         {
