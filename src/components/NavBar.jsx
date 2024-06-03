@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function NavBar(){
 
@@ -12,7 +13,7 @@ export default function NavBar(){
 
     return(
         <div className="h-20 w-full fixed fondo text-white pt-4 px-10 flex justify-between z-50">
-            <h3>{empordaClaro}</h3>
+            <Image className="w-fit scale-75 mb-3" src="/empordaOscuro.jpg" width={200} height={100} alt="Emporda nav" />
 
             <div className="hidden md:flex space-x-14 mt-1">
                 {TextNav("I", "nicio", 80)}
