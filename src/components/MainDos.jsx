@@ -1,7 +1,63 @@
+"use client";
 import Image from "next/image"
-
+import { useState } from "react"
 
 export default function MainDos(){
+
+    const [ pestaña, setPestaña ] = useState(0)
+    const [ estilo, setEstilo ] = useState("");
+    const [ estilo1, setEstilo1 ] = useState("");
+    const [ estilo2, setEstilo2 ] = useState("");
+    const [ estilo3, setEstilo3 ] = useState("");
+    const [ estilo4, setEstilo4 ] = useState("");
+
+
+    const cambiarPestaña = (e)=>{
+        switch(e.target.id){
+            case "0": 
+                setPestaña(0); 
+                setEstilo("border-b-4 border-blue-400 pb-3") ; 
+                setEstilo1("");
+                setEstilo2("");
+                setEstilo3("");
+                setEstilo4("");
+                break;
+            case "1": 
+                setPestaña(1); 
+                setEstilo("");
+                setEstilo1("border-b-4 border-blue-400 pb-3") ; 
+                setEstilo2("");
+                setEstilo3("");
+                setEstilo4("");
+                break;
+                case "2": 
+                    setPestaña(2); 
+                    setEstilo("");
+                    setEstilo1("");
+                    setEstilo2("border-b-4 border-blue-400 pb-3") ; 
+                    setEstilo3("");
+                    setEstilo4("");
+                    break;
+            case "3": 
+                setPestaña(3); 
+                setEstilo("");
+                setEstilo1("");
+                setEstilo2("");
+                setEstilo3("border-b-4 border-blue-400 pb-3") ; 
+                setEstilo4("");
+                break;
+            case "4": 
+                setPestaña(4); 
+                setEstilo("");
+                setEstilo1("");
+                setEstilo2("");
+                setEstilo3("");
+                setEstilo4("border-b-4 border-blue-400 pb-3") ; 
+                break;
+        }
+    }
+
+    const base = "text-white font-bold  px-4 cursor-pointer  w-full text-center";
 
     return(
         <div>
@@ -10,15 +66,15 @@ export default function MainDos(){
             <h4 className="text-3xl md:text-4xl font-bold azulCo text-center pt-10 md:pt-36 z-20 relative">G<span className="text-white">alería</span></h4>
             <div className="relative z-20 mt-10">
                 <div className="flex justify-evenly mx-auto text-lg relative w-[80%] text-blue-300">
-                    <p className="text-white font-bold border-b-4 border-blue-400 px-4 pb-3 cursor-pointer border-r-2 w-full text-center">Limpieza General</p>
+                    <p id="0" onClick={cambiarPestaña} className={`${base} ${estilo}`}>Limpieza General</p>
                     
-                    <p className="text-white font-bold px-4 cursor-pointer border-r-2 w-full text-center">Turismo Rural</p>
+                    <p id="1" onClick={cambiarPestaña} className={`${base} ${estilo1}`}>Turismo Rural</p>
                     
-                    <p className="text-white font-bold px-4 cursor-pointer border-r-2 w-full text-center">Nuestro Merch</p>
+                    <p id="2" onClick={cambiarPestaña} className={`${base} ${estilo2}`}>Nuestro Merch</p>
                     
-                    <p className="text-white font-bold px-4 cursor-pointer border-r-2 w-full text-center">Residencias</p>
+                    <p id="3" onClick={cambiarPestaña} className={`${base} ${estilo3}`}>Residencias</p>
                     
-                    <p className="text-white font-bold px-4 cursor-pointer text-center w-full">Tramuntana</p>
+                    <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} border-r-0`}>Tramuntana</p>
                 </div>
                 <hr className="w-[80%] mx-auto border-blue-300 "/>
             </div>
