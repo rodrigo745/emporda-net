@@ -5,13 +5,13 @@ export default function MainUno(){
     const informacion = [["Casas", "Pisos", "Hoteles", "Camping"],["Comunidades", "Oficinas", "Mamparas", "Vidrios"],["Locales Comerciales", "Alquileres Vacacionales", "Obras Nuevas y Reformas", "Masías Rurales"]]
 
     return(
-        <div className="h-full md:h-[90vh]  px-10 md:px-0 flex flex-col-reverse md:flex md:flex-row justify-center p-10 md:pt-40 ">
+        <div className="h-full md:h-[90vh]  px-10 md:px-0 flex flex-col-reverse md:flex md:flex-row justify-center p-10 md:pt-40">
             <div className="hidden md:block md:w-[20%]">
                 <Image src="/mainUno.svg" width={370} height={370} alt="limpieza"/>
             </div>
-            <div className="md:w-[55%] md:pl-24">
+            <div className="md:w-[50%] md:pl-10">
                 <h4 className="azulCo font-bold text-2xl md:text-4xl md:ml-2">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
-                <div className="mt-20 w-full hidden md:flex space-x-16 ml-32 md:scale-125">
+                <div className="mt-20 w-full hidden md:flex space-x-16 ml-32 md:ml-32  md:scale-125">
                     <div className="space-y-8">
                         {
                             informacion[0].map((e,index)=> (
