@@ -5,13 +5,13 @@ export default function MainUno(){
     const informacion = [["Casas", "Pisos", "Hoteles", "Camping"],["Comunidades", "Oficinas", "Mamparas", "Vidrios"],["Locales Comerciales", "Alquileres Vacacionales", "Obras Nuevas y Reformas", "Masías Rurales"]]
 
     return(
-        <div className="h-[90vh] flex flex-col-reverse md:flex md:flex-row justify-center pt-40 ">
-            <div className="w-[20%]">
-                <Image src="/mainUno.svg" width={400} height={400} alt="limpieza"/>
+        <div className="h-[90vh]  px-10 md:px-0 flex flex-col-reverse md:flex md:flex-row justify-center pt-40 ">
+            <div className="hidden md:block md:w-[20%]">
+                <Image src="/mainUno.svg" width={370} height={370} alt="limpieza"/>
             </div>
-            <div className="w-[60%] pl-14">
-                <h4 className="azulCo font-bold text-4xl">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
-                <div className="mt-10 flex space-x-16">
+            <div className="md:w-[55%] md:pl-24">
+                <h4 className="azulCo font-bold text-2xl md:text-4xl">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
+                <div className="mt-20 w-full hidden md:flex space-x-16 ml-24 md:scale-125">
                     <div className="space-y-8">
                         {
                             informacion[0].map((e,index)=> (
@@ -37,6 +37,33 @@ export default function MainUno(){
 
                     </div>
                 </div>
+                <div className="flex md:hidden justify-between">
+                    <div className="w-[100%] md:hidden mt-10">
+                        <Image src="/mainUno.svg" width={370} height={370} alt="limpieza"/>
+                    </div>
+                    <div className="space-y-7 mt-12 ml-8">
+                            {
+                                informacion[0].map((e,index)=> (
+                                    <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 w-20 text-center">{e}</p>
+                                ))
+                            }
+                    </div>
+                </div>
+                <div className=" mt-10 grid grid-cols-2 ml-[1vw] w-[90vw]">
+                        {
+                            informacion[1].map((e,index)=> (
+                                <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 w-32 text-center mb-7">{e}</p>
+                            ))
+                        }
+
+                    </div>
+                <div className="flex flex-col md:hidden space-y-8 mb-10">
+                        {
+                            informacion[2].map((e,index)=> (
+                                <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 text-center">{e}</p>
+                            ))
+                        }
+                    </div>
             </div>
         </div>
     )

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header(){
     return(
-        <div className="h-screen flex flex-col md:flex md:flex-row justify-between px-20 items-center">
+        <div className="h-screen  flex flex-col md:flex md:flex-row justify-between px-20 items-center">
             <div className="mt-28 md:mt-20 flex flex-col justify-center items-center">
                 <div className="px-8 md:px-0">
                     <Image className="md:max-w-[80%] mx-auto" src="/emporda.jpg" width={400} height={400} alt="EmpordaNet" style={{ width: 'auto', height: 'auto' }} />
