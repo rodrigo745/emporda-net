@@ -10,8 +10,8 @@ export default function MainUno(){
                 <Image src="/mainUno.svg" width={370} height={370} alt="limpieza"/>
             </div>
             <div className="md:w-[55%] md:pl-24">
-                <h4 className="azulCo font-bold text-2xl md:text-4xl">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
-                <div className="mt-20 w-full hidden md:flex space-x-16 ml-24 md:scale-125">
+                <h4 className="azulCo font-bold text-2xl md:text-4xl md:ml-2">O<span className="text-black">frecemos servicio de limpieza para:</span> </h4>
+                <div className="mt-20 w-full hidden md:flex space-x-16 ml-32 md:scale-125">
                     <div className="space-y-8">
                         {
                             informacion[0].map((e,index)=> (
@@ -49,7 +49,7 @@ export default function MainUno(){
                             }
                     </div>
                 </div>
-                <div className="md:hidden mt-5 grid grid-cols-2 ml-[1vw] w-[90vw]">
+                <div className="md:hidden mt-5 grid grid-cols-2 gap-x-5 w-[90vw]">
                         {
                             informacion[1].map((e,index)=> (
                                 <p key={index} className="fondo text-sm font-bold rounded-md text-white p-3 w-32 text-center mb-4">{e}</p>
