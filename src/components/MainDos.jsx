@@ -61,7 +61,7 @@ export default function MainDos(){
     const base = "text-white font-bold  px-4 cursor-pointer  w-full text-center";
 
     return(
-        <div className="h-full bg-[url('/fondoCurvo.svg')]  bg-no-repeat bg-cover">
+        <div className="h-full bg-[url('/fondoCurvo.svg')] bg-no-repeat bg-cover pt-16 md:pt-10">
             
             <h4 className="text-3xl md:text-4xl font-bold azulCo text-center pt-20 md:pt-36 z-20 relative">G<span className="text-white">alería</span></h4>
             <div className="relative z-20 mt-3 md:mt-10">
@@ -84,11 +84,11 @@ export default function MainDos(){
                     </div>
                         <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} text-sm p-2`}>Tramuntana</p>
                 </div>
-                <div className="md:h-[820px] h-[650px] ">
-                    {pestaña == 0 && <Galeria cantidad={6} grande={1} nCuadrosCol="lg:grid-cols-3"/>}
-                    {pestaña == 1 && <Galeria cantidad={3} grande={0} nCuadrosCol="lg:grid-cols-3"/>}
-                    {pestaña == 2 && <Galeria cantidad={4} grande={0} nCuadrosCol="lg:grid-cols-3 "/>}
-                    {pestaña == 3 && <Galeria cantidad={5} grande={1} nCuadrosCol="lg:grid-cols-3"/>}
+                <div className="md:h-[820px] h-fit  bg-[url('/fondoCurvo.svg')] lg:bg-none  bg-no-repeat bg-cover pb-20">
+                    {pestaña == 0 && <Galeria cantidad={6} grande={1} nCuadrosCol="mt-7 md:mt-0 grid-cols-2 xl:grid-cols-3"/>}
+                    {pestaña == 1 && <Galeria cantidad={3} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3"/>}
+                    {pestaña == 2 && <Galeria cantidad={4} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3 "/>}
+                    {pestaña == 3 && <Galeria cantidad={5} grande={1} nCuadrosCol="grid-cols-2 mt-7 md:mt-0 lg:grid-cols-3"/>}
                     {pestaña == 4 && <Galeria cantidad={8} grande={0} nCuadrosCol="2xl:grid-cols-4 lg:grid-cols-3 grid-cols-2"/>}
                 </div>
             </div>
