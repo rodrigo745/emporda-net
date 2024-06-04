@@ -1,4 +1,7 @@
+
+
 export default function Galeria(props){
+
     return(
         <div className="flex flex-col md:flex md:flex-row md:space-x-14 text-white w-[80%] mx-auto mt-10">
             {
