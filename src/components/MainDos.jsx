@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image"
 import { useState } from "react"
+import Galeria from "./Galeria";
 
 export default function MainDos(){
 
@@ -61,8 +62,7 @@ export default function MainDos(){
 
     return(
         <div className="h-full bg-[url('/fondoCurvo.svg')] bg-no-repeat bg-cover">
-            {/* <div className="hidden md:block w-full z-0"><Image className=" w-full absolute z-10" src="/fondoCurvo.svg" width={1000} height={1000} alt="fondo curvo" /></div>
-            <div className="block md:hidden w-full  z-0"><Image className="w-full absolute z-10" src="/fondoCurvoMovil.svg" width={500} height={500} alt="fondo curvo" /></div> */}
+            
             <h4 className="text-3xl md:text-4xl font-bold azulCo text-center pt-20 md:pt-36 z-20 relative">G<span className="text-white">alería</span></h4>
             <div className="relative z-20 mt-3 md:mt-10">
                 <div className="hidden md:flex justify-evenly mx-auto text-lg relative w-[80%] text-blue-300">
@@ -85,7 +85,7 @@ export default function MainDos(){
                         <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} text-sm p-2`}>Tramuntana</p>
                 </div>
                 <div className="md:h-[900px] h-[650px]">
-
+                    <Galeria/>
                 </div>
             </div>
         </div>
