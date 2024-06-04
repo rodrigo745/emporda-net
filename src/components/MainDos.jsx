@@ -68,7 +68,6 @@ export default function MainDos(){
                 <div className="hidden md:flex justify-evenly mx-auto text-lg relative w-[80%] text-blue-300">
                     <p id="0" onClick={cambiarPestaña} className={`${base} ${estilo}`}>Limpieza General</p>
                     <p id="1" onClick={cambiarPestaña} className={`${base} ${estilo1}`}>Turismo Rural</p>
-                    <p id="2" onClick={cambiarPestaña} className={`${base} ${estilo2}`}>Nuestro Merch</p>
                     <p id="3" onClick={cambiarPestaña} className={`${base} ${estilo3}`}>Residencias</p>
                     <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} border-r-0`}>Tramuntana</p>
                 </div>
@@ -79,17 +78,15 @@ export default function MainDos(){
                         <p id="1" onClick={cambiarPestaña} className={`${base} ${estilo1} text-sm p-2`}>Turismo Rural</p>
                     </div>
                     <div className="flex">
-                        <p id="2" onClick={cambiarPestaña} className={`${base} ${estilo2} text-sm p-2`}>Nuestro Merch</p>
                         <p id="3" onClick={cambiarPestaña} className={`${base} ${estilo3} text-sm p-2`}>Residencias</p>
                     </div>
                         <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} text-sm p-2`}>Tramuntana</p>
                 </div>
                 <div className="md:h-[820px] h-fit  bg-[url('/fondoCurvo.svg')] lg:bg-none  bg-no-repeat bg-cover pb-20">
-                    {pestaña == 0 && <Galeria cantidad={6} grande={1} nCuadrosCol="mt-7 md:mt-0 grid-cols-2 xl:grid-cols-3"/>}
-                    {pestaña == 1 && <Galeria cantidad={3} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3"/>}
-                    {pestaña == 2 && <Galeria cantidad={4} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3 "/>}
-                    {pestaña == 3 && <Galeria cantidad={5} grande={1} nCuadrosCol="grid-cols-2 mt-7 md:mt-0 lg:grid-cols-3"/>}
-                    {pestaña == 4 && <Galeria cantidad={8} grande={0} nCuadrosCol="2xl:grid-cols-4 lg:grid-cols-3 grid-cols-2"/>}
+                    {pestaña == 0 && <Galeria carpeta="general" cantidad={6} grande={1} nCuadrosCol="mt-7 md:mt-0 grid-cols-2 xl:grid-cols-3"/>}
+                    {pestaña == 1 && <Galeria carpeta="turismo" cantidad={5} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3"/>}
+                    {pestaña == 3 && <Galeria carpeta="residencias" cantidad={5} grande={1} nCuadrosCol="grid-cols-2 mt-7 md:mt-0 lg:grid-cols-3"/>}
+                    {pestaña == 4 && <Galeria carpeta="tramuntana" cantidad={5} grande={1} nCuadrosCol="lg:grid-cols-3 grid-cols-2"/>}
                 </div>
             </div>
         </div>
