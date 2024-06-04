@@ -79,8 +79,8 @@ export default function MainDos(){
                     </div>
                     <div className="flex">
                         <p id="3" onClick={cambiarPestaña} className={`${base} ${estilo3} text-sm p-2`}>Residencias</p>
-                    </div>
                         <p id="4" onClick={cambiarPestaña} className={`${base} ${estilo4} text-sm p-2`}>Tramuntana</p>
+                    </div>
                 </div>
                 <div className="md:h-[820px] h-fit  bg-[url('/fondoCurvo.svg')] lg:bg-none  bg-no-repeat bg-cover pb-20">
                     {pestaña == 0 && <Galeria carpeta="general" cantidad={6} grande={1} nCuadrosCol="mt-7 md:mt-0 grid-cols-2 xl:grid-cols-3"/>}
