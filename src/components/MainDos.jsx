@@ -86,7 +86,7 @@ export default function MainDos(){
                     {pestaña == 0 && <Galeria carpeta="general" cantidad={6} grande={1} nCuadrosCol="mt-7 md:mt-0 grid-cols-2 xl:grid-cols-3"/>}
                     {pestaña == 1 && <Galeria carpeta="turismo" cantidad={5} grande={0} nCuadrosCol="grid-cols-2 lg:grid-cols-3"/>}
                     {pestaña == 3 && <Galeria carpeta="residencias" cantidad={5} grande={1} nCuadrosCol="grid-cols-2 mt-7 md:mt-0 lg:grid-cols-3"/>}
-                    {pestaña == 4 && <Galeria carpeta="tramuntana" cantidad={5} grande={1} nCuadrosCol="lg:grid-cols-3 grid-cols-2"/>}
+                    {pestaña == 4 && <Galeria carpeta="tramuntana" cantidad={5} grande={1} nCuadrosCol="lg:grid-cols-3 grid-cols-2 mt-10 md:mt-0"/>}
                 </div>
             </div>
         </div>
